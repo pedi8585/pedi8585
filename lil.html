@@ -1,0 +1,345 @@
+<html dir="rtl" lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>کتابخانه آنلاین</title>
+    <style>
+        html{
+            font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            background-image: url(https://wallpaperaccess.com/full/5277001.jpg);
+            background-size: cover;
+            background-attachment: fixed;
+        }
+        body{
+          margin: 0;
+          padding: 0;
+        }
+        .fir{
+            overflow: hidden;
+            color: black;
+            position: sticky;
+            text-align: center;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        a{
+            color: black;
+            overflow: hidden;
+        }
+        a :hover{
+            backface-visibility: initial;
+        }
+        .first{
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            border-radius: 4px;
+            background-color:(orange);
+            border: none;
+            color: #FFFFFF;
+            text-align: center;
+            font-size: 28px;
+            padding: 20px;
+            width: 200px;
+            transition: all 0.5s;
+            cursor: pointer;
+            margin: 5px;
+        }
+        .first span{
+            cursor: pointer;
+            display: inline-block;
+            position: relative;
+            transition: 0.5s;
+        }
+        .first span:after{
+            content: '\00bb';
+            position: absolute;
+            opacity: 0;
+            top: 0;
+            right: -20px;
+            transition: 0.5s;
+        }
+        .first:hover span{
+            padding-right: 25px;
+        }
+        .first:hover span:after{
+            opacity: 1;
+            right: 0;
+        }
+        .button {
+  border-radius: 4px;
+  background-color: orange;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 28px;
+  padding: 20px;
+  width: 200px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+  position: -webkit-sticky;
+
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+.bod{
+    text-align: center;
+    border: none;
+    border-radius: 10px;
+    padding: 30px;
+    margin: 200px;
+    margin-top: 30px;
+}
+.end{
+    text-align: center;
+    margin: 50px;
+}
+    .icon-bar {
+  width: 90%;
+  background-color: orange;
+  overflow: auto;
+  text-align: center;
+  position: sticky;
+  text-decoration:none ;
+  display: block;
+  top: 0;
+  padding-left: 50px;
+  margin-right: 40px;
+}
+
+.icon-bar a {
+  float: left;
+  text-align: center;
+  width: 20%;
+  padding: 12px 0;
+  transition: all 0.3s ease; 
+  color: white;
+  font-size: 36px; 
+  margin-left: 30px;
+}
+
+.icon-bar a:hover {
+  background-color: #000; 
+}
+
+.active {
+  background-color: orange; 
+}
+.left{
+  text-align: left;
+  font-size: 20px;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  border-radius: 5px;
+  padding: 10px;
+  margin-right: 90%;
+  margin-top: -60;
+
+}
+.left a{
+  display: block;
+  color: black;
+  padding: 5px;
+
+}
+.left a:hover{
+  background-color: black;
+  color: white;
+  border-radius: 3px;
+  padding: 2px;
+  list-style: none;
+
+}
+.first-div{
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  background-image: url(https://wallpapergram.ir/wp-img/tn_WallpaperGram.IR_1562268426_z87264.jpg);
+  border-radius: 5px;
+  margin-left: 50%;
+  padding-top: -30px;
+  padding-bottom: 60px ;
+  padding-right: 50px;
+  padding-left: 81%;
+  margin-top: 20px;
+  margin-right: 80px;
+}
+.inside-div{
+  padding-top: 10px;
+}
+.inside-div img{
+  border-radius: 5px;
+  margin: 5px;
+}
+.inside-div img:hover{
+  background-color: grey;
+}
+.inside-div figcaption{
+  margin-right: 90px;
+}
+.inside-div a{
+  display: block;
+  color: black;
+  padding: 5px;
+}
+.inside-div a:hover{
+  background-color: black;
+  color: white;
+  border-radius: 3px;
+  padding: 2px;
+  list-style: none;
+}
+.inside-div figcaption {
+  font-size: larger;
+  color: antiquewhite;
+}
+.first{
+            background-color:orange;
+            padding: 10px 80px 80px 80px;
+            margin: 5px;
+            text-align: center;
+            border: silver 2px;
+            margin-right: 81px;
+            border-radius: 10px;
+            
+}
+.first input{
+            padding: 5px;
+            margin: 5px;
+}
+.foot{
+  font-size: larger;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  background-color: orange;
+  border-radius: 8px;
+  margin-right: 40%;
+  margin-left: 130px;
+  padding-right: 10px;
+  padding-left: 10px;
+  margin-top: -27%;
+  float: left;
+}
+.last{
+  text-align: center;
+  background-color: skyblue;
+  border-radius: 20px;
+}
+</style>
+</head>
+</head>
+<body>
+    <header>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<div class="icon-bar">
+  <a title="خانه" class="active" href="file:///C:/Users/aseman/Desktop/index.js/lil/lil.html"><i class="fa fa-home"></i></a>
+  <a title="جستجو" href="http://localhost/lms/index.php?signIn=1"><i class="fa fa-search"></i></a>
+  <a title="بارگذاری کتاب" href="http://localhost/lms/index.php?signIn=1"><i class="fa fa-envelope"></i></a>
+  <a title="دسته بندی کتاب ها" href="http://localhost/lms/index.php?signIn=1"><i class="fa fa-globe"></i></a>
+</div>
+
+<div class="first-div">
+      <h2>
+        NEW
+      </h2>
+        <table class="inside-div">
+          <tr>
+            <td><figure><a target="_blank" href="https://taaghche.com/book/11786/%D8%B1%D9%88%DB%8C%D8%A7%DB%8C-%D9%86%DB%8C%D9%85%D9%87-%D8%B4%D8%A8"><div class="column"></div><img src="https://img.taaghche.com/frontCover/11786.jpg?w=150" title="مظفر سالاری"></a></figure>
+              <figcaption>رویای نیمه شب</figcaption>
+            </td>
+            <td><figure><a target="_blank" href="https://taaghche.com/book/12209/%D8%A7%D8%A8%D9%86-%D9%85%D8%B4%D8%BA%D9%84%D9%87-%D8%AF%D8%A7%D8%B3%D8%AA%D8%A7%D9%86-%DB%8C%DA%A9-%D8%B2%D9%86%D8%AF%DA%AF%DB%8C%D8%8C-%D8%AC%D9%84%D8%AF-%D8%A7%D9%88%D9%84"><img src="https://img.taaghche.com/frontCover/12209.jpg?w=150" title="نادر ابراهیمی"></a></figure>
+              <figcaption>ابن مشغله</figcaption>
+            </td>
+            <td><figure><a target="_blank" href="https://taaghche.com/book/54928/%D8%A2%D8%A8%D9%86%D8%A8%D8%A7%D8%AA-%D8%AF%D8%A7%D8%B1%DA%86%DB%8C%D9%86%DB%8C"><img src="https://img.taaghche.com/frontCover/54928.jpg?w=150" title="نادر ابراهیمی"></a></figure>
+            <figcaption>آبنبات دارچینی</figcaption>
+          </td>
+            <td>
+              <figure><a target="_blank" href="https://taaghche.com/book/15842/%D8%A2%D8%A8-%D9%86%D8%A8%D8%A7%D8%AA-%D9%BE%D8%B3%D8%AA%D9%87-%D8%A7%DB%8C"><img src="https://img.taaghche.com/frontCover/15842.jpg?w=150" title="مهرداد صدقی"></a></figure>
+              <figcaption>آبنبات پسته ای</figcaption>
+            </td>
+          </tr>
+        </table>
+
+</div>
+<div class="first-div">
+  <h2>
+    OFF 80%
+  </h2>
+
+    <table class="inside-div">
+      <tr>
+        <td><figure><a target="_blank" href="https://taaghche.com/book/79555/%D9%84%D9%85%D8%B3-%D8%A8%D8%B4%D8%B1"><img src="https://img.taaghche.com/frontCover/79555.jpg?w=150" title="میچ"></a></figure>
+          <figcaption>لمس بشر</figcaption>
+        </td>
+        <td><figure><a target="_blank" href="https://taaghche.com/book/40362/%D9%BE%D9%84"><img src="https://img.taaghche.com/frontCover/40362.jpg?w=150" title="آراز بارسیقان"></a></figure>
+          <figcaption>پل</figcaption>
+        </td>
+        <td><figure><a target="_blank" href="https://taaghche.com/book/88644/%DB%8C%DA%AF%D8%A7%D9%86%DA%AF%DB%8C-%D8%A8%D8%A7-%DA%A9%D9%84-%D8%B2%D9%86%D8%AF%DA%AF%DB%8C"><img src="https://img.taaghche.com/frontCover/88644.jpg?w=150" title="اکهارت تله"></a></figure>
+        <figcaption>یگانگی با کل زندگی</figcaption>
+      </td>
+        <td>
+          <figure><a target="_blank" href="https://taaghche.com/book/78498/%D8%AE%D9%88%D8%B4%D8%A7-%D8%AE%D9%88%D8%B4%D8%A8%D8%AE%D8%AA%D8%A7%D9%86"><img src="https://img.taaghche.com/frontCover/78498.jpg?w=150" title="یاسمینا رضا"></a></figure>
+          <figcaption>خوشا خوشبختان</figcaption>
+        </td>
+      </tr>
+    </table>
+</div>
+<div class="first-div">
+  <h2>
+    BEST
+  </h2>
+
+    <table class="inside-div">
+      <tr>
+        <td><figure><a target="_blank" href="https://taaghche.com/book/59130/%D9%82%D9%84%D8%A8-%D8%B3%DA%AF%DB%8C"><img src="https://img.taaghche.com/frontCover/59130.jpg?w=150" title="میخائیل بولگاکف"></a></figure>
+          <figcaption>قلب سگی</figcaption>
+        </td>
+        <td><figure><a target="_blank" href="https://taaghche.com/book/27744/%D9%85%D9%86-%D9%88-%D8%A7%D8%B3%D8%AA%D8%A7%D8%AF%D9%85"><img src="https://img.taaghche.com/frontCover/27744.jpg?w=150" title="آراز بارسیقان"></a></figure>
+          <figcaption>من و استادم</figcaption>
+        </td>
+        <td><figure><a target="_blank" href="https://taaghche.com/book/5190/%DA%AF%D9%88%D8%AF%D8%A7%D9%84-%D9%87%D8%A7"><img src="https://img.taaghche.com/frontCover/5190.jpg?w=150" title="الیف شاکاف"></a></figure>
+        <figcaption>گودال ها</figcaption>
+      </td>
+        <td>
+          <figure><a target="_blank" href="https://taaghche.com/book/89393/%D8%B1%D9%88%D8%B2%DA%AF%D8%A7%D8%B1-%D8%B3%D8%AE%D8%AA"><img src="https://img.taaghche.com/frontCover/89393.jpg?w=150" title="یاسمینا رضا"></a></figure>
+          <figcaption>روزگار سخت</figcaption>
+        </td>
+      </tr>
+    </table>
+</div>
+<div class="last">
+  <footer>
+    <h1>
+        :for useres login
+        <br />
+        <br />
+    </h1>  
+        <h2>
+        username:demo
+        <br />
+        password:demo
+        <br />
+        </h2>
+  </footer>
+</div>
+</body>
+</html>
